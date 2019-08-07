@@ -20,6 +20,9 @@ export default {
   getRandomDog: function() {
     return axios.get("https://dog.ceo/api/breeds/image/random");
   },
+  getBooksOfType: function(title) {
+    return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + title );
+  },
   getBooksOfTypeTitle: function(title) {
     return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + title );
   },
